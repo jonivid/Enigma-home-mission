@@ -1,0 +1,32 @@
+{ "data": [ 
+    { "name" : "XRPAUD", "value" : 1.55, "change" : -0.57, "amount" : 1218000,"category": "XRP","isStarOn":false } , 
+    { "name" : "XRPBTC", "value" : 0.000002354, "change" : 0.43, "amount" : 8246000,"category": "XRP","isStarOn":false } , 
+    { "name" : "XRPCAD", "value" : 1.43, "change" : -0.35, "amount" : 2223000,"category": "XRP","isStarOn":false } , 
+    { "name" : "XRPETH", "value" : 0.0003566, "change" : 0.39, "amount" : 2308000,"category": "XRP","isStarOn":false } , 
+    { "name" : "XRPEUR", "value" : 0.9560, "change" : -0.35, "amount" : 6450000000,"category": "XRP","isStarOn":false } , 
+    { "name" : "XRPGBP", "value" : 0.8176, "change" : -0.65, "amount" : 9761000,"category": "XRP","isStarOn":false } , 
+    { "name" : "XRPJPY", "value" : 124.02, "change" : -0.76, "amount" : 26.32000,"category": "XRP","isStarOn":false } , 
+    { "name" : "XRPUSD", "value" : 1.13, "change" : -0.36, "amount" : 4333000,"category": "XRP","isStarOn":false } , 
+    { "name" : "XRPUSDT", "value" : 1.13, "change" : -0.35, "amount" : 8257000,"category": "XRP","isStarOn":false } ,
+
+    { "name" : "BCHAUD", "value" : 929.99, "change" : -0.05, "amount" : 7.58,"category": "BCH","isStarOn":false } , 
+    { "name" : "BCHBTC", "value" : 0.01347, "change" : -3.37, "amount" : 155.61,"category": "BCH","isStarOn":false } , 
+    { "name" : "BCHETH", "value" : 0.2040, "change" : -3.32, "amount" : 64.78,"category": "BCH","isStarOn":false } , 
+    { "name" : "BCHEUR", "value" : 548.56, "change" : -4.06, "amount" : 1227000,"category": "BCH","isStarOn":false } , 
+    { "name" : "BCHGBP", "value" : 466.70, "change" : -4.82, "amount" : 9.65,"category": "BCH","isStarOn":false } , 
+    { "name" : "BCHJPY", "value" : 70759.00, "change" : -5.00, "amount" : 20.61,"category": "BCH","isStarOn":false } , 
+    { "name" : "BCHUSD", "value" : 646.66, "change" : -4.00, "amount" : 2216000,"category": "BCH","isStarOn":false } , 
+    { "name" : "BCHUSDT", "value" : 645.70, "change" : -4.33, "amount" : 150.12,"category": "BCH","isStarOn":false },
+
+    { "name" : "LTCAUD", "value" : 236.88, "change" : -3.63, "amount" : 61.66,"category": "LTC","isStarOn":false } , 
+    { "name" : "LTCBTC", "value" : 0.003587, "change" : -2.45, "amount" : 2587000,"category": "LTC","isStarOn":false } , 
+    { "name" : "LTCETH", "value" : 0.05441, "change" : -2.42, "amount" : 590.38,"category": "LTC","isStarOn":false } , 
+    { "name" : "LTCEUR", "value" : 145.99, "change" : -3.00, "amount" : 9.361,"category": "LTC","isStarOn":false } , 
+    { "name" : "LTCGBP", "value" : 124.91, "change" : -3.05, "amount" : 261.35,"category": "LTC","isStarOn":false } , 
+    { "name" : "LTCJPY", "value" : 70759.00, "change" : -5.00, "amount" : 20.61,"category": "LTC","isStarOn":false } , 
+    { "name" : "XRUSD", "value" : 646.66, "change" : -4.00, "amount" : 2216000,"category": "LTC","isStarOn":false } , 
+    { "name" : "LTCUSDT", "value" : 645.70, "change" : -4.33, "amount" : 150.12,"category": "LTC","isStarOn":false } 
+   
+   
+    
+] }

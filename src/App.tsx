@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import data from '../src/data.json'
+import { DrawButtons } from './components/drawButtons/DrawButtons';
+import { DrawTable } from './components/drawTable/DrawTable';
+import { getAllCorrencies, setCategoriesList } from './redux/correncyAction';
 
 function App() {
+  const dispatch = useDispatch()
+  // dispatch(getAllCorrencies(data.data))
+  const correncies = useSelector((state: any) => state.correncies)
+  let categoryList = Array.from(new Set(correncies.map((c: any) => {
+    return c.category
+  })))
+  categoryList = categoryList.map((category: any) => {
+    return category = { name: category, isActive: true }
+  })
+  // dispatch(setCategoriesList(categoryList))
+
+  useEffect(() => {
+    dispatch(getAllCorrencies(data.data))
+  }, [correncies]);
+
+  useEffect(() => {
+    dispatch(setCategoriesList(categoryList))
+  }, [categoryList]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DrawButtons />
+      <DrawTable />
     </div>
   );
 }
