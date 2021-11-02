@@ -1,6 +1,6 @@
 import { ACTIONS } from "./actionConfig";
 
-export interface ICorrency {
+export interface ICurrency {
   name?: string;
   value?: number;
   change?: number;
@@ -13,7 +13,7 @@ export interface ICategory {
   isActive?: boolean;
 }
 
-export function getAllCorrencies(payload: any) {
+export function getAllCurrencies(payload: any) {
   return {
     type: ACTIONS.GET_ALL_CURRENCIES,
     payload,
@@ -21,7 +21,7 @@ export function getAllCorrencies(payload: any) {
 }
 export function setCategoriesList(payload: any) {
   return {
-    type: ACTIONS.SET_CORRENCY_CATEGORIES_BUTTONS,
+    type: ACTIONS.SET_CURRENCY_CATEGORIES_BUTTONS,
     payload,
   };
 }

@@ -5,14 +5,14 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper'; import { useDispatch, useSelector } from 'react-redux'
-import { getAllCorrencies } from '../../redux/correncyAction';
+import { getAllCurrencies } from '../../redux/currencyAction';
 import StarIcon from '@mui/icons-material/Star';
 import { grey, yellow } from '@mui/material/colors';
 
 export const DrawTable = () => {
     const dispatch = useDispatch()
     const categoriesList = useSelector((state: any) => state.categories)
-    let correncies = useSelector((state: any) => state.correncies)
+    let currencies = useSelector((state: any) => state.currencies)
 
     var SI_SYMBOL = ["", "k", "M", "G", "T", "P", "E"];
     function abbreviateNumber(number: number) {
@@ -25,19 +25,19 @@ export const DrawTable = () => {
     }
 
     const toggleStar = (row: any) => {
-        const index = correncies.findIndex((corrency: any) =>
-            (corrency.name === row.name)
+        const index = currencies.findIndex((currency: any) =>
+            (currency.name === row.name)
         );
-        correncies = [...correncies]
-        correncies[index].isStarOn = !correncies[index].isStarOn
-        dispatch(getAllCorrencies(correncies))
+        currencies = [...currencies]
+        currencies[index].isStarOn = !currencies[index].isStarOn
+        dispatch(getAllCurrencies(currencies))
 
     }
 
     return (
         <div>
             {categoriesList.map((category: any, index: number) => {
-                const list = correncies.filter((corrency: any) => corrency.category === category.name && category.isActive)
+                const list = currencies.filter((currency: any) => currency.category === category.name && category.isActive)
                 return (
                     <>{category.isActive ? <h1>{category.name}</h1> : null}
                         <TableContainer component={Paper} style={{ backgroundColor: "black" }}>

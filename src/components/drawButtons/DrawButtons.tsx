@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { setCategoriesList } from '../../redux/correncyAction';
+import { setCategoriesList } from '../../redux/currencyAction';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import '../drawButtons/drawButtons.css'

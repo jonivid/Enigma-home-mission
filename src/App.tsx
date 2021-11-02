@@ -3,13 +3,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import data from '../src/data.json'
 import { DrawButtons } from './components/drawButtons/DrawButtons';
 import { DrawTable } from './components/drawTable/DrawTable';
-import { getAllCorrencies, setCategoriesList } from './redux/correncyAction';
+import { getAllCurrencies, setCategoriesList } from './redux/currencyAction';
 
 function App() {
   const dispatch = useDispatch()
   // dispatch(getAllCorrencies(data.data))
-  const correncies = useSelector((state: any) => state.correncies)
-  let categoryList = Array.from(new Set(correncies.map((c: any) => {
+  const currencies = useSelector((state: any) => state.currencies)
+  let categoryList = Array.from(new Set(currencies.map((c: any) => {
     return c.category
   })))
   categoryList = categoryList.map((category: any) => {
@@ -18,8 +18,8 @@ function App() {
   // dispatch(setCategoriesList(categoryList))
 
   useEffect(() => {
-    dispatch(getAllCorrencies(data.data))
-  }, [correncies]);
+    dispatch(getAllCurrencies(data.data))
+  }, [currencies]);
 
   useEffect(() => {
     dispatch(setCategoriesList(categoryList))
